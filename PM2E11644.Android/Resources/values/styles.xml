@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+
+  <style name="MainTheme" parent="MainTheme.Base">
+  
+
+    <!-- Set theme colors from https://aka.ms/material-colors -->
+   
+  </style>
+</resources>

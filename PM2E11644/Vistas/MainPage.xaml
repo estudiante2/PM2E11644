@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E11644.Vistas.MainPage">
+    <ContentPage.Content>
+       
+            <StackLayout 
+               
+                Background="#A9DFBF"
+                Margin="0,0,0,0">
+                       <Grid
+                        Margin="0,0,0,0">
+                        <Image
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            x:Name="uth"
+                           
+                       HeightRequest="10" 
+                       WidthRequest="100" 
+                       Source="uthlogo.png" 
+                            Margin="10,-20,-10,-10"
+                            />
+                        
+                        <Label
+                             Grid.Row="1"
+                            Grid.Column="1"                            
+                            Text=" SITE VITOR APP
+                            
+                            IMAGEN SITIO VISITADO" 
+                            
+                       FontSize="16" 
+                            TextColor="Black"
+                       HorizontalOptions="Center" 
+                       Margin="-40,-10, 0, 0"/>
+                    </Grid>               
+                             
+               
+
+                <Image x:Name="imgphotoubicacion" 
+                       Background="white"
+                       HeightRequest="200" WidthRequest="270" 
+                      HorizontalOptions="CenterAndExpand"
+                       Margin="10,0,0,0" />
+                
+                <Button x:Name="btntomarphoto"
+                        Text="Foto"
+                        Margin="90,0,90,0"
+                        TextTransform="None"
+                        CornerRadius="100"
+                        FontSize="20"
+                        FontFamily="Arial"
+                        BackgroundColor="#D1FF33"
+                        TextColor="Black"
+                        Clicked="btntomarphoto_Clicked" />
+
+            <Grid>
+                
+                <Label 
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Text="Latitud:" 
+                       Margin="50, 10,20,0"
+                       TextColor="Black"
+                       FontSize="20"/>
+
+                <Entry
+                     Grid.Row="1"
+                    Grid.Column="1"
+                    x:Name="Latitud_input"
+                       IsEnabled="False"
+                       Margin="-50, 0, 30, 0"
+                    FontSize="20"
+                    />
+
+                <Label
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Text="Longitud:" 
+                       TextColor="Black"
+                       FontSize="20"
+                       Margin="50, 10, 20, 0"/>
+                <Entry 
+                   Grid.Row="2"
+                    Grid.Column="1"
+                    x:Name="Longitud_input"
+                       IsEnabled="False"
+                       Margin="-50, 0, 30, 0"
+                     FontSize="20"/>
+            </Grid>
+
+
+            <Label Text="Descripción:" 
+                       Margin="20, 10,0,0"
+                        TextColor="Black"
+                       FontSize="20"/>
+                <Entry x:Name="Descripcion_input" 
+                       Margin="20, 0, 20, 0"/>
+
+                <Grid ColumnDefinitions="*,*" Margin="15, 0">
+                    <Button x:Name="btnaguardar"
+                        Text="Guardar"
+                        Grid.Column="0"
+                                Margin="20,0,20,0"
+                        TextTransform="None"
+                        CornerRadius="100"
+                        FontSize="20"
+                        BackgroundColor="#D1FF33"
+                        TextColor="Black"
+                        Clicked="btnaguardar_Clicked" />
+
+                    <Button x:Name="btnlistviewubicaciones"
+                        Text="Lista Sitios"
+                        Grid.Column="1"
+                                     Margin="20,0,20,0"
+                        TextTransform="None"
+                        CornerRadius="100"
+                        FontSize="20"
+                        BackgroundColor="#D1FF33"
+                        TextColor="Black"
+                        Clicked="btnlistviewubicaciones_Clicked" />
+                </Grid>
+
+                <Button x:Name="btnsalir"
+                        Text="Salir"
+                        HorizontalOptions="Fill"
+                         Margin="110,0,110,0"
+                        TextTransform="None"
+                        CornerRadius="100"
+                        FontSize="20"
+                        BackgroundColor="#D1FF33"
+                        TextColor="Black"                      
+                        Clicked="btnsalir_Clicked" />
+            </StackLayout>      
+    </ContentPage.Content>
+</ContentPage>
