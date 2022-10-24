@@ -68,7 +68,7 @@ namespace PM2E11644.Vistas
 
             if (String.IsNullOrWhiteSpace(Longitud_input.Text) || String.IsNullOrWhiteSpace(Latitud_input.Text) || String.IsNullOrWhiteSpace(Descripcion_input.Text) || imgphotoubicacion.Source == null)
             {
-                await this.DisplayAlert("Mensaje", "Debe de Llenar los Datos!, Todos los campos son obligatorios", "OK");
+                await this.DisplayAlert("Programación movil 2", "Faltan Datos!, los campos son obligatorios", "OK");
             }
 
         }
@@ -123,13 +123,13 @@ namespace PM2E11644.Vistas
 
                     if (resultado != 0)
                     {
-                        await DisplayAlert("Exitos", "Ubicacion Almacenada Exitosamente!!!", "Ok");
+                        await DisplayAlert("Exitos", "Ubicacion Almacenada ", "Ok");
                         await Navigation.PushAsync(new ListViewLocationsP());
                         cleanScreen();
                     }
                     else
                     {
-                        await DisplayAlert("Alerta", "Ha Ocurrido un Error", "Ok");
+                        await DisplayAlert("Alerta", "Error", "Ok");
                     }
                 }
                 catch (Exception ex)

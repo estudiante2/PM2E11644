@@ -5,7 +5,7 @@
     <ContentPage.Content>
        
             <StackLayout 
-               
+              
                 Background="#A9DFBF"
                 Margin="0,0,0,0">
                        <Grid
@@ -37,7 +37,7 @@
                
 
                 <Image x:Name="imgphotoubicacion" 
-                       Background="white"
+                      Background="white"
                        HeightRequest="200" WidthRequest="270" 
                       HorizontalOptions="CenterAndExpand"
                        Margin="10,0,0,0" />
@@ -49,7 +49,7 @@
                         CornerRadius="100"
                         FontSize="20"
                         FontFamily="Arial"
-                        BackgroundColor="#D1FF33"
+                        BackgroundColor="#008080"
                         TextColor="Black"
                         Clicked="btntomarphoto_Clicked" />
 
@@ -102,9 +102,10 @@
                         Grid.Column="0"
                                 Margin="20,0,20,0"
                         TextTransform="None"
-                        CornerRadius="100"
+                           
+                        CornerRadius="40"
                         FontSize="20"
-                        BackgroundColor="#D1FF33"
+                        BackgroundColor="#008080"
                         TextColor="Black"
                         Clicked="btnaguardar_Clicked" />
 
@@ -115,7 +116,7 @@
                         TextTransform="None"
                         CornerRadius="100"
                         FontSize="20"
-                        BackgroundColor="#D1FF33"
+                        BackgroundColor="#008080"
                         TextColor="Black"
                         Clicked="btnlistviewubicaciones_Clicked" />
                 </Grid>
@@ -127,7 +128,7 @@
                         TextTransform="None"
                         CornerRadius="100"
                         FontSize="20"
-                        BackgroundColor="#D1FF33"
+                        BackgroundColor="#008080"
                         TextColor="Black"                      
                         Clicked="btnsalir_Clicked" />
             </StackLayout>      

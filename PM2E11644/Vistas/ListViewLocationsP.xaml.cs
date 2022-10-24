@@ -36,7 +36,7 @@ namespace PM2E11644.Vistas
         {
             Ubicaciones item = (Ubicaciones)e.Item;
 
-            var alert = await DisplayAlert("Acciones", "Seleccione la Acción que desea realizar", "Ir a la Ubicacion", "Borrar Ubicacion");
+            var alert = await DisplayAlert("Que desea Hacer?", "Seleccionar la Acción ", "Ir a la Ubicacion", "Borrar Ubicacion");
 
             if (alert)
             {
@@ -55,15 +55,20 @@ namespace PM2E11644.Vistas
 
                 if (resultado != 0)
                 {
-                    await DisplayAlert("Mensaje", "Ubicacion Eliminada Exitosamente!!!", "Ok");
+                    await DisplayAlert("Gracias", "Eliminada Exitosamente!!!", "Ok");
                 }
                 else
                 {
-                    await DisplayAlert("Mensaje", "Ha ocurrido un error!!!", "Ok");
+                    await DisplayAlert("Un Momento", "Ha ocurrido un error!!!", "Ok");
                 }
 
                 await Navigation.PopAsync();
             }
+        }
+
+        private void btnatras_Clicked(object sender, EventArgs e)
+        {
+
         }
     }
 }

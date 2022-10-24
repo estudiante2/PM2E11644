@@ -9,7 +9,7 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Background="#719D83">
             <Frame BackgroundColor="#A9DFBF ">
                 <Label                                            
                        Text="Sitios Visitados" 
@@ -23,11 +23,12 @@
                     <DataTemplate>
                         <ImageCell ImageSource="{Binding Imagen, Converter={StaticResource ByteArrayToImage}}" Text="{Binding Descripcion}" 
                                    TextColor="Black"
-                                   
                                    />
+                        
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+           
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
